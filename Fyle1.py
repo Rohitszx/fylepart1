@@ -5,12 +5,7 @@ from psycopg2.extras import RealDictCursor
 import json
 from flask_cors import CORS
 
-# db_host = os.environ['localhost']
-# db_name = os.environ['postgres']
-# db_user = os.environ['postgres']
-# db_URI = os.environ['postgres://postgres:Rohitszx@localhost:3000/postgres']
-# db_password = os.environ['Rohitszx']
-conn = psycopg2.connect(database="postgres", user="postgres", password="Rohitszx", host="127.0.0.1", port="3000")
+conn = psycopg2.connect(database="-----", user="-----", password="-----", host="------", port="------")
 
 def autocomplete(keyword, limit, offset):
     cursor = conn.cursor(cursor_factory=RealDictCursor)
